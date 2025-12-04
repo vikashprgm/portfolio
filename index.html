@@ -10,20 +10,35 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'handwriting': ['Caveat', 'cursive'],
+                        'mono-custom': ['Roboto Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="bg-neutral-900 text-slate-300 antialiased selection:bg-indigo-500 selection:text-white min-h-screen flex items-center justify-center">
     
     <main class="max-w-2xl mx-auto px-6">
         
-        <div class="flex flex-col md:flex-row items-center gap-8 mb-8 md:mb-12">
-            <img src="./p.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full border-2 border-slate-700 shadow-lg object-cover">
-            
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl font-bold text-slate-50 mb-3">Heya, I'm Vikash Kr Yadav</h1>
-                <p class="text-lg text-slate-400 leading-relaxed">
-                    I'm an undergraduate and aspiring software engineer who loves building accessible and thoughtful solutions to complex problems.
-                </p>
+        <div class="items-center gap-8 mb-8 md:mb-12">
+            <div class="flex justify-center p-5">
+                <img src="./p.jpg" alt="Profile Picture" class="w-24 h-24 rounded-full border-2 border-slate-700 shadow-lg object-cover">
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="flex flex-col justify-center items-center">
+                    <h1 class="text-3xl font-bold text-slate-50 mb-3">Heya, I'm Vikash</h1>
+                    <p class="text-lg font-handw text-slate-400 leading-relaxed text-center">
+                        I'm an undergraduate and aspiring software engineer who loves building accessible and thoughtful solutions to complex problems.
+                    </p>
+                </div>
             </div>
         </div>      
 
