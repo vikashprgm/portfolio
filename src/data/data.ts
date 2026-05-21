@@ -1,8 +1,20 @@
 import { type props } from '#/components/ProjectCard'
 import i from './reactflow.png'
+import j from './rimjhim.png'
+import k from './campuskart.png'
+import l from './blukoin.png'
 const link = "https://images.pexels.com/photos/32324508/pexels-photo-32324508.jpeg"
 
 export const data:Array<props> = [
+    {
+    Title: "CampusKart",
+    Desc : "Platform for college students to exchange their essentials",
+    Image : k,
+    live : true,
+    link : 'http://campuskartapp.netlify.app/',
+    git : 'https://github.com/vikashprgm/',
+    stack : ["Tanstack Start" ,"React", "ShadCN"]
+  },
   {
     Title: "Codeboard",
     Desc : "Visualize your code in a 2-D flowchart",
@@ -15,55 +27,19 @@ export const data:Array<props> = [
   {
     Title: "RimJhim",
     Desc : "A local first, minimalist, AI-powered note taking app",
-    Image : link,
+    Image : j,
     live : true,
     link : 'https://github.com/vikashprgm/rimjhim/releases/',
     git : 'https://github.com/vikashprgm/rimjhim',
     stack : ["Rust", "Ollama", "Tauri","LanceDB"]
   },
     {
-    Title: "MetaBlogger",
-    Desc : "Blogging Site with Media Support",
-    Image : link,
+    Title: "Blu-Koin",
+    Desc : "Block chain based carbon registry system for farmers",
+    Image : l,
     live : true,
-    link : 'https://google.com/',
+    link : 'https://blu-koin.vercel.app/',
     git : 'https://github.com/vikashprgm/',
-    stack : ["MongoDB" ,"React" , "Tailwind", "Typescript"]
-  },
-  {
-    Title: "CampusKart",
-    Desc : "C2C platform for Campus Students",
-    Image : link,
-    live : true,
-    link : 'https://google.com/',
-    git : 'https://github.com/vikashprgm/',
-    stack : ["PostGres" ,"React" , "Tailwind", "Typescript"]
-  },
-  {
-    Title: "PayTM",
-    Desc : "Minimalist CRUD app with transactions and Friends utility",
-    Image : link,
-    live : true,
-    link : 'https://google.com/',
-    git : 'https://github.com/vikashprgm/Paytm',
-    stack : ["React" ,"MongoDB", "Tailwind"]
-  },
-    {
-    Title: "Aggrow",
-    Desc : "AI based recommendation system for Farmers",
-    Image : link,
-    live : true,
-    link : 'https://google.com/',
-    git : 'https://github.com/vikashprgm/',
-    stack : ["Python" ,"HuggingFace"]
-  },
-  {
-    Title: "Project",
-    Desc : "Description",
-    Image : link,
-    live : true,
-    link : 'https://google.com/',
-    git : 'https://github.com/vikashprgm/',
-    stack : ["Stack" ,"Goes", "Here"]
-  },
+    stack : ["React" ,"Tailwind", "Javascript"]
+  }
 ]
